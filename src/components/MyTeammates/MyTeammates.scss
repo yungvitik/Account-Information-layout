@@ -1,0 +1,47 @@
+@import "../../index.scss";
+
+.teammates {
+  padding-bottom: 30px;
+
+  &__heading {
+    @extend %section-heading;
+  }
+
+  &__content {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid $border-color;
+  }
+
+  &__accounts {
+    display: flex;
+    gap: 20px;
+  }
+  &__accounts-chart {
+    width: 75px;
+    height: 75px;
+  }
+
+  &__button {
+    @extend %secondary-button;
+    width: 155px;
+  }
+}
+
+.accounts-info {
+  &__heading {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+    color: $text-color-dark;
+  }
+
+  &__field {
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-color-light;
+  }
+}
