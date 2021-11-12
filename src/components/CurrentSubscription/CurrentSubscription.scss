@@ -1,0 +1,47 @@
+@import "../../index.scss";
+
+.subscription {
+  &__heading {
+    @extend %section-heading;
+  }
+
+  &__content {
+    border-radius: 8px;
+    background-color: $background-grey;
+  }
+
+  &__wrapper {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &--top {
+      border-bottom: 2px solid rgba(255, 255, 255, 1);
+    }
+  }
+  
+  &__button {
+    @extend %primary-button;
+    width: 155px;
+  }
+
+  &__info {
+    display: flex;
+    
+    &--main {
+      & .info__values {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__info-values {
+    @extend %info-values;
+  }
+
+  &__info-fields {
+    @extend %info-fields;
+  }
+  
+}

@@ -1,0 +1,38 @@
+@import "../../index.scss";
+
+.fax {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+
+  &__wrapper {
+    position: relative;
+    max-width: 320px;
+  }
+
+  &__heading {
+    @extend %section-heading;
+    display: inline;
+    margin-right: 8px;
+  }
+
+  &__tooltip {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__hint {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-color-light;
+  }
+
+
+  &__button {
+    @extend %secondary-button;
+    width: 156px;
+  }
+}
