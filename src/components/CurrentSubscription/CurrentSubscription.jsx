@@ -1,7 +1,6 @@
 import React from "react";
 import './CurrentSubscription.scss';
 
-
 export const CurrentSubscription = ({subscription}) => {
   return (
     <>
