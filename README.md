@@ -1,10 +1,10 @@
-# Account information page
+# Account information layout
 
 -  [DEMO LINK](https://yungvitik.github.io/Account-Information-layout/)
 -  [Figma mocup](https://www.figma.com/file/I8yqQ4GvZSlPYOVl81tdMe/User-Flow?node-id=0%3A1)
 
 ## Description
-Technologies: React + SCSS
+Technologies used: React + SCSS
 
 ## Local development
 
