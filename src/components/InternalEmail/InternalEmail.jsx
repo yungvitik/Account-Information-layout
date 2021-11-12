@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import './InternalEmail.scss';
 import copy_icon from '../../icons/copy_icon.svg'
+import checkmark_icon from '../../icons/checkmark_icon.svg'
 
 export const InternalEmail = ({email}) => {
+  const [isCopied, SetIsCopied] = useState(false);
+
   return (
     <>
       <div className="email__wrapper">
@@ -21,9 +24,12 @@ export const InternalEmail = ({email}) => {
         <button
           className="email__button"
           title="copy to clipboard"
-          onClick={() => {navigator.clipboard.writeText(email)}}
+          onClick={() => {
+            navigator.clipboard.writeText(email);
+            SetIsCopied(true);
+          }}
         >
-          <img src={copy_icon} alt="" className="email__button-icon"/>
+          <img src={isCopied? checkmark_icon : copy_icon} alt="" className="email__button-icon"/>
         </button>
       </div>
     </>

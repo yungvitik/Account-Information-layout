@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import './DocumentStatistics.scss';
 import Documents from '../../icons/documentStatistics/Documents.svg'
